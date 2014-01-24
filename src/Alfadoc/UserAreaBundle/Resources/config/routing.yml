@@ -1,3 +1,13 @@
 alfadoc_user_area_homepage:
     pattern:  /
     defaults: { _controller: AlfadocUserAreaBundle:Home:index }
+
+login:
+    pattern:   /login
+    defaults:  { _controller: AlfadocUserAreaBundle:Security:login }
+
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern:   /logout

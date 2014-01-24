@@ -8,7 +8,89 @@
 
 html, body {
 	height: 100%;
+}
+
+.loginWrap {  
+	position: relative;  
+	min-height: 100%;  
+}
+
+* html .loginWrap {  
+ height: 100%;  
 }  
+.loginWrap1 {  
+	padding-bottom: 100px;  
+}
+
+.loginFooter {
+	color: #929292;
+	width: 700px;
+	padding: 10px 0 10px 0;
+	text-align: center;
+	border-top: 1px solid #EEE;
+	position: relative;    
+	margin: -38px auto 0 auto;  
+}  
+
+.loginPageLogo {
+	display: block;
+	margin: 0 auto 50px auto;
+	padding: 50px 0 0 0;
+}
+
+.loginPageH1 {
+	color: #555555;
+	width: 700px;
+	margin: 0 auto 85px auto;
+	padding: 20px 0;
+	font-size: 16pt;
+	text-align: center;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+}
+
+.loginPageForm {
+	width: 255px;
+	margin: 15px auto 0 auto;
+}
+
+.loginPageForm input {
+	height: 30px;
+	padding: 0 10px 0 10px;
+	border: 2px solid #EEE;
+	border-radius: 10px;
+}
+
+.looginPageLogin {
+	float: right;
+}
+
+.looginPagePass {
+	margin: 5px 0 0 0;
+	clear: both;
+	float: right;
+}
+
+#loginPageSubmit {
+	display: block;
+	color: #fff;
+	background-color: #494949;
+	margin: 5px 0 0 0;
+	padding: 6px 20px 22px 20px;
+	border: none;
+	clear: both;
+	float: right;
+}
+
+#loginPageSubmit:hover {
+	background-color: #a90000;
+}
+
+.loginError {
+	font-weight: bold;
+	color: #E90000;
+	text-align: center;
+}
 
 .wrap {  
 	position: relative;  

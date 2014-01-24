@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="bundles/alfadocuserarea/styles.css">
+<link rel="stylesheet" href="/web/bundles/alfadocuserarea/styles.css">
 {% endblock %}
 
 {% block body %}
@@ -10,11 +10,11 @@
 
 <div class="header">
 	<a class="logo" href="#">
-		<img src="bundles/alfadocuserarea/images/logo.png" />
+		<img src="/web/bundles/alfadocuserarea/images/logo.png" />
 	</a>
 	<div class="exit">
-		<a href="#">
-			<img src="bundles/alfadocuserarea/images/exit_icon.png" />
+		<a href="{{ path('logout') }}">
+			<img src="/web/bundles/alfadocuserarea/images/exit_icon.png" />
 		</a>
 		<div>1001037</div>
 	</div>

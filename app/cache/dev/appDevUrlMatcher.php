@@ -144,6 +144,27 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'Alfadoc\\UserAreaBundle\\Controller\\HomeController::indexAction',  '_route' => 'alfadoc_user_area_homepage',);
         }
 
+        if (0 === strpos($pathinfo, '/log')) {
+            if (0 === strpos($pathinfo, '/login')) {
+                // login
+                if ($pathinfo === '/login') {
+                    return array (  '_controller' => 'Alfadoc\\UserAreaBundle\\Controller\\SecurityController::loginAction',  '_route' => 'login',);
+                }
+
+                // login_check
+                if ($pathinfo === '/login_check') {
+                    return array('_route' => 'login_check');
+                }
+
+            }
+
+            // logout
+            if ($pathinfo === '/logout') {
+                return array('_route' => 'logout');
+            }
+
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

@@ -1,0 +1,39 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/web/bundles/alfadocadminarea/login_styles.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="loginWrap">
+<div class="loginWrap1">
+
+<img class="loginPageLogo" src="/web/bundles/alfadocuserarea/images/logo_big.png" />
+
+<h1 class="loginPageH1">Личный кабинет</h1>
+
+{% if error %}
+    <div class="loginError">{{ error.message }}</div>
+{% endif %}
+
+<form class="loginPageForm" action="{{ path('alfadoc_admin_area_login_check') }}" method="post">
+	<div class="looginPageLogin">
+		<label class="loginPageLoginLabel" for="username">Логин:</label>
+		<input type="text" id="username" name="_username" value="{{ last_username }}" />
+	</div>
+	
+	<div class="looginPagePass">
+		<label class="loginPagePassLabel" for="password">Пароль:</label>
+		<input type="password" id="password" name="_password" />
+	</div>
+	
+	<input id="loginPageSubmit" type="submit" value="Вход"/>
+</form>
+
+</div>
+</div>
+
+<div class="loginFooter">2014 © Николай Липка</div>
+
+{% endblock %}

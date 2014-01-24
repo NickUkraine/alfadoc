@@ -161,7 +161,7 @@ body {
 }
 
 .menu {
-	height: 39px;
+	height: 33px;
 	background-color: #4d4d4d;
 	border-radius: 10px;
 	padding: 0 15px;
@@ -177,7 +177,7 @@ body {
 .menu a {
 	display: block;
 	font-size: 12pt;
-	padding: 10px 15px;
+	padding: 7px 15px;
 	color: #f8f8f8;
 	text-decoration: none;
 	background-color: #bd0000;

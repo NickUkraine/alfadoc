@@ -1,0 +1,171 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="/web/bundles/alfadocadminarea/styles.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="header">
+	<div class="logo">
+		<a class="logoImage" href="#"><img src="/web/bundles/alfadocadminarea/images/logo.png" /></a>
+	</div>
+	<div class="top">
+		<div class="topLeft">
+			<h1>Клиенты</h1>
+			<div class="path">Клиенты</div>
+			<div class="fastButtons">
+				<ul>
+					<li><a href="#">Пополнить счет</a></li>
+					<li><a href="#">Выписка</a></li>
+					<li><a href="#">Траффик</a></li>
+					<li><a href="#">Настройки клиента</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="exit">
+			<a href="#"><img src="images/exit_icon.png" /></a>
+			<span>nick</span>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="menu">
+		<ul>
+			<li class="active"><a href="#">Клиенты</a></li>
+			<li><a href="#">Платежи</a></li>
+			<li><a href="#">Снятия</a></li>
+			<li><a href="#">Тех. поддержка</a></li>
+			<li><a href="#">Настройки</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="tabNav1">
+			<div class="total">Всего: 3841</div>
+			<div class="tabPageNav">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<a class="currentPage" href="">1</a>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="">9</a>
+				<a href="">></a>
+				<a href="">>></a>
+			</div>
+			<form action="#">
+				<label>На странице:</label>
+				<select>
+					<option>10</option>
+					<option>20</option>
+					<option selected="selected">30</option>
+					<option>40</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+			</form>
+		</div>
+		<table>
+			<tr class="tableHead">
+				<td>UID</td>
+				<td>Фамилия</td>
+				<td>Имя</td>
+				<td>Отчество</td>
+				<td>Город</td>
+				<td>Улица</td>
+				<td>Дом</td>
+				<td>Квартира</td>
+				<td>Баланс</td>
+				<td>Кредит</td>
+				<td>Подразделение</td>
+				<td>Статус</td>
+			<tr>
+			<tbody>
+				<tr class="filterTR">
+					<form action="admin.html">
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+						<td><input class="filter" type="text"></td>
+					</form>
+				</tr>
+				<tr class="trBody">
+					<td>nick</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+					<td>-</td>
+				</tr>
+			</tbody>
+			<tr class="filterTR">
+				<form action="admin.html">
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+					<td><input class="filter" type="text"></td>
+				</form>
+			</tr>
+		</table>
+		<div class="tabNav1">
+			<div class="total">Всего: 3841</div>
+			<div class="tabPageNav">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<a class="currentPage" href="">1</a>
+				<a href="">2</a>
+				<a href="">3</a>
+				<a href="">4</a>
+				<a href="">5</a>
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">8</a>
+				<a href="">9</a>
+				<a href="">></a>
+				<a href="">>></a>
+			</div>
+			<form action="#">
+				<label>На странице:</label>
+				<select>
+					<option>10</option>
+					<option>20</option>
+					<option selected="selected">30</option>
+					<option>40</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<body>
+</html>
+{% endblock %}

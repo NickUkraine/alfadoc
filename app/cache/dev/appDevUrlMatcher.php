@@ -135,6 +135,15 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // alfadoc_user_area_homepage
+        if (rtrim($pathinfo, '/') === '') {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'alfadoc_user_area_homepage');
+            }
+
+            return array (  '_controller' => 'Alfadoc\\UserAreaBundle\\Controller\\HomeController::indexAction',  '_route' => 'alfadoc_user_area_homepage',);
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

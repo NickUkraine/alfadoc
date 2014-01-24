@@ -1,0 +1,7 @@
+parameters:
+#    alfadoc_user_area.example.class: Alfadoc\UserAreaBundle\Example
+
+services:
+#    alfadoc_user_area.example:
+#        class: %alfadoc_user_area.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

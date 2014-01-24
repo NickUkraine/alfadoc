@@ -1,0 +1,3 @@
+alfadoc_user_area_homepage:
+    pattern:  /
+    defaults: { _controller: AlfadocUserAreaBundle:Home:index }

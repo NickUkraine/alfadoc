@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 11.5pt;
+	font-family: Arial, sans-serif;
+	color: #000;
+}
+
+html, body {
+	height: 100%;
+}  
+
+.wrap {  
+	position: relative;  
+	min-height: 100%;  
+}  
+
+* html .wrap {  
+	height: 100%;  
+}
+
+.wrap2 {
+	position: relative;
+	padding: 0 0 30px 0;  
+} 
+
+.content {
+	width: 625px;
+	margin: 15px 0 0 0;
+	background-color: #f8f8f8;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 15px;
+	float: left;
+}  
+
+.footer {
+	width: 655px;
+	color: #B1B1B1;
+	text-align: center;
+	padding: 6px 0 0 0;
+	height: 24px;
+	background-color: #f8f8f8;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;   
+	margin-top: -30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}  
+
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 70px;
+	padding: 25px 0 0 10px;
+}
+
+.exit {
+	float: right;
+}
+
+.sidebar {
+	width: 200px;
+	margin: 15px 0 0 0;
+	background-color: #f8f8f8;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 15px;
+	float: right;
+}
+
+.sidebar h2 {
+	margin: 0 0 10px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.menu {
+	height: 39px;
+	background-color: #4d4d4d;
+	border-radius: 10px;
+	padding: 0 15px;
+	list-style-type: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.menu li {
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+.menu a {
+	display: block;
+	font-size: 12pt;
+	padding: 10px 15px;
+	color: #f8f8f8;
+	text-decoration: none;
+	background-color: #bd0000;
+}
+
+.menu a:hover {
+	color: #3c3c3c !important;
+	background-color: #efefef !important;
+}
+
+.activeMenu {
+	color: #3c3c3c !important;
+	background-color: #efefef !important;
+}
+
+.exit {
+	margin: 11px 15px 0 0;
+}
+
+.exit a {
+	float: right;
+}
+
+.exit div {
+	color: #a7a9ac;
+	font-weight: bold;
+	margin: 9px 5px 0 0;
+	float: right;
+}
+
+.content h2 {
+	margin: 0 0 5px 0;
+}
+
+.content table {
+	margin: 0 0 20px 0;
+	border-collapse: collapse;
+}
+
+.content td {
+	padding: 5px 10px;
+	border: 1px solid #E0E0E0;
+}
+
+.greenBalance {
+	color: #009418;
+}

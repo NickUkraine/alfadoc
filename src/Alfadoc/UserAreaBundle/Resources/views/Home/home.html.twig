@@ -1,0 +1,120 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="bundles/alfadocuserarea/styles.css">
+{% endblock %}
+
+{% block body %}
+<div class="wrap">
+
+
+<div class="header">
+	<a class="logo" href="#">
+		<img src="bundles/alfadocuserarea/images/logo.png" />
+	</a>
+	<div class="exit">
+		<a href="#">
+			<img src="bundles/alfadocuserarea/images/exit_icon.png" />
+		</a>
+		<div>1001037</div>
+	</div>
+</div>
+
+<ul class="menu">
+	<li><a class="activeMenu" href="#">Главная</a></li>
+	<li><a href="#">Выписка</a></li>
+	<li><a href="#">Пополнить счет</a></li>
+</ul>  
+
+<div class="wrap2">
+<div class="content">
+	
+	<h2>Аккаунт</h2>
+	<table>
+		<tr>
+			<td>UID:</td>
+			<td>1001037</td>
+		</tr>
+		<tr>
+			<td>ФИО:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Баланс:</td>
+			<td class="greenBalance">950.27 грн.</td>
+		</tr>
+		<tr>
+			<td>Кредит:</td>
+			<td>100.00 грн.</td>
+		</tr>
+		<tr>
+			<td>Тариф:</td>
+			<td>Мега</td>
+		</tr>
+	</table>
+	
+	<h2>Адрес</h2>
+	<table>
+		<tr>
+			<td>Индекс:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Страна:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Область:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Город:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Улица:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Дом:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Подъезд:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Этаж:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Квартира:</td>
+			<td>-</td>
+		</tr>
+	</table>
+
+	<h2>Контакты</h2>
+	<table>
+		<tr>
+			<td>Домашний телефон:</td>
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>Мобильный телефон:</td>
+			<td>-</td>
+		</tr>
+	</table>
+
+</div>
+
+<div class="sidebar">
+	<h2>Справка</h2>
+	<p>Здесь будет краткая справочная информация.</p>
+</div>
+
+
+</div>
+</div> 
+
+<div class="footer">2014 © Николай Липка</div>
+{% endblock %}

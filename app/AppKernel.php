@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Alfadoc\UserAreaBundle\AlfadocUserAreaBundle(),
             new Alfadoc\AdminAreaBundle\AlfadocAdminAreaBundle(),
+            new Alfadoc\CoreBundle\AlfadocCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

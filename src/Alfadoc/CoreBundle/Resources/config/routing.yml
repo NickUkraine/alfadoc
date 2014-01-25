@@ -1,0 +1,3 @@
+alfadoc_core_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: AlfadocCoreBundle:Default:index }

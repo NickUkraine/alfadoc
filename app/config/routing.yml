@@ -1,3 +1,7 @@
+alfadoc_core:
+    resource: "@AlfadocCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
 alfadoc_admin_area:
     resource: "@AlfadocAdminAreaBundle/Resources/config/routing.yml"
     prefix:   /admin/

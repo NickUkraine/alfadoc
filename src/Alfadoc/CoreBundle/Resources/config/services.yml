@@ -1,0 +1,7 @@
+parameters:
+#    alfadoc_core.example.class: Alfadoc\CoreBundle\Example
+
+services:
+#    alfadoc_core.example:
+#        class: %alfadoc_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -4,6 +4,9 @@ security:
         Alfadoc\CoreBundle\Entity\User: plaintext
         Alfadoc\AdminAreaBundle\Entity\Administrators: plaintext
     firewalls:
+        ajax_calls:
+            pattern:    ^/_wdt
+            anonymous:  ~
         user_login_firewall:
             pattern:    ^/login$
             anonymous:  ~
@@ -30,6 +33,7 @@ security:
                 target: /
 
     access_control:
+        - { path: ^/_wdt, roles: 'IS_AUTHENTICATED_ANONYMOUSLY' }
         - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin, roles: ROLE_ADMIN }

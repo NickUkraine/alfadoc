@@ -1,5 +1,7 @@
 {% extends '::base.html.twig' %}
 
+{% block title %}Главная{% endblock %}
+
 {% block stylesheets %}
 <link rel="stylesheet" href="/web/bundles/alfadocuserarea/styles.css">
 {% endblock %}
@@ -21,7 +23,7 @@
 </div>
 
 <ul class="menu">
-	<li><a class="activeMenu" href="#">Главная</a></li>
+	<li><a class="activeMenu" href="{{ path('alfadoc_user_area_homepage') }}">Главная</a></li>
 	<li><a href="#">Выписка</a></li>
 	<li><a href="#">Пополнить счет</a></li>
 </ul>  
@@ -33,23 +35,19 @@
 	<table>
 		<tr>
 			<td>Логин:</td>
-			<td>1001037</td>
+			<td>{{ username }}</td>
 		</tr>
 		<tr>
-			<td>ФИО:</td>
-			<td>-</td>
+			<td>Владелец:</td>
+			<td>{{ lastName }} {{ firstName }} {{ middleName }}</td>
 		</tr>
 		<tr>
 			<td>Баланс:</td>
-			<td class="greenBalance">950.27 грн.</td>
+			<td class="greenBalance">{{ balance }}</td>
 		</tr>
 		<tr>
 			<td>Кредит:</td>
-			<td>100.00 грн.</td>
-		</tr>
-		<tr>
-			<td>Тариф:</td>
-			<td>Мега</td>
+			<td>{{ credit }}</td>
 		</tr>
 	</table>
 	
@@ -57,46 +55,46 @@
 	<table>
 		<tr>
 			<td>Индекс:</td>
-			<td>-</td>
+			<td>{{ postIndex }}</td>
 		</tr>
 		<tr>
 			<td>Страна:</td>
-			<td>-</td>
+			<td>{{ country }}</td>
 		</tr>
 		<tr>
 			<td>Область:</td>
-			<td>-</td>
+			<td>{{ state }}</td>
 		</tr>
 		<tr>
 			<td>Город:</td>
-			<td>-</td>
+			<td>{{ city }}</td>
 		</tr>
 		<tr>
 			<td>Улица:</td>
-			<td>-</td>
+			<td>{{ street }}</td>
 		</tr>
 		<tr>
 			<td>Дом:</td>
-			<td>-</td>
+			<td>{{ house }}</td>
 		</tr>
 		<tr>
 			<td>Подъезд:</td>
-			<td>-</td>
+			<td>{{ porch }}</td>
 		</tr>
 		<tr>
 			<td>Этаж:</td>
-			<td>-</td>
+			<td>{{ level }}</td>
 		</tr>
 		<tr>
 			<td>Квартира:</td>
-			<td>-</td>
+			<td>{{ flat }}</td>
 		</tr>
 	</table>
 
 	<h2>Контакты</h2>
 	<table>
 		<tr>
-			<td>Домашний телефон:</td>
+			<td>Городской телефон:</td>
 			<td>-</td>
 		</tr>
 		<tr>

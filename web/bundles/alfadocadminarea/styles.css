@@ -115,7 +115,7 @@ body {
 
 .fastButtons {
 	overflow: hidden;
-	margin: 7px 0 0 -7px;
+	margin: 7px 0 0 0;
 	clear: both;
 	float: left;
 }

@@ -8,6 +8,9 @@ class HomeController extends Controller
 {
 	public function indexAction()
 	{
-		return $this->render('AlfadocUserAreaBundle:Home:home.html.twig');
+		$usr= $this->get('security.context')->getToken()->getUser();
+		$username = $usr->getUsername();
+
+		return $this->render('AlfadocUserAreaBundle:Home:home.html.twig', array('username' => $username));
 	}
 }

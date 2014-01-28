@@ -30,7 +30,6 @@ class State
      * @ORM\OneToMany(targetEntity="City", mappedBy="state")
      **/
     protected $assignedCities;
-
     /**
      * Constructor
      */

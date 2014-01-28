@@ -1,3 +1,7 @@
 alfadoc_core_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: AlfadocCoreBundle:Default:index }
+
+alfadoc_core_homepage:
+    pattern:  /temp
+    defaults: { _controller: AlfadocCoreBundle:Temp:create }

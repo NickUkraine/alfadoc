@@ -93,14 +93,12 @@
 
 	<h2>Контакты</h2>
 	<table>
+		{% for phone in phones %}
 		<tr>
-			<td>Городской телефон:</td>
-			<td>-</td>
+			<td>{{ phone.type }}</td>
+			<td>+{{ phone.number }}</td>
 		</tr>
-		<tr>
-			<td>Мобильный телефон:</td>
-			<td>-</td>
-		</tr>
+		{% endfor %}
 	</table>
 
 </div>

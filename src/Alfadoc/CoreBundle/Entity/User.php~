@@ -2,6 +2,7 @@
 namespace Alfadoc\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -85,8 +86,8 @@ class User implements UserInterface, \Serializable
     private $flat;
 
     /**
-     * @ORM\Column(type="string")
-     */
+     * @ORM\OneToMany(targetEntity="Phone", mappedBy="user")
+     **/
     private $phones;
 
 
@@ -96,6 +97,7 @@ class User implements UserInterface, \Serializable
         $this->isActive = true;
         // may not be needed, see section on salt below
         // $this->salt = md5(uniqid(null, true));
+	$this->phones = new ArrayCollection();
     }
 
     /**
@@ -477,5 +479,28 @@ class User implements UserInterface, \Serializable
     public function getHouse()
     {
         return $this->house;
+    }
+
+    /**
+     * Add phones
+     *
+     * @param \Alfadoc\CoreBundle\Entity\Phone $phones
+     * @return User
+     */
+    public function addPhone(\Alfadoc\CoreBundle\Entity\Phone $phones)
+    {
+        $this->phones[] = $phones;
+
+        return $this;
+    }
+
+    /**
+     * Remove phones
+     *
+     * @param \Alfadoc\CoreBundle\Entity\Phone $phones
+     */
+    public function removePhone(\Alfadoc\CoreBundle\Entity\Phone $phones)
+    {
+        $this->phones->removeElement($phones);
     }
 }

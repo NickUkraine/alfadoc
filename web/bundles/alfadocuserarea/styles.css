@@ -163,8 +163,7 @@ body {
 .menu {
 	height: 33px;
 	background-color: #4d4d4d;
-	border-radius: 10px;
-	padding: 0 15px;
+	padding: 0 10px;
 	list-style-type: none;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }

@@ -27,9 +27,14 @@ class Phone
     protected $number;
 
     /**
-     * @ORM\Column(type="string", length=30)
+     * @ORM\Column(type="string", length=30, nullable=true)
      */
     protected $comment;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="phones")
+     */
+    protected $user;
 
     /**
      * Get id
@@ -108,5 +113,28 @@ class Phone
     public function getComment()
     {
         return $this->comment;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \Alfadoc\CoreBundle\Entity\User $user
+     * @return Phone
+     */
+    public function setUser(\Alfadoc\CoreBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \Alfadoc\CoreBundle\Entity\User 
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

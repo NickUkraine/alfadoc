@@ -2,31 +2,32 @@
 
 namespace Alfadoc\CoreBundle\Controller;
 
-use Alfadoc\CoreBundle\Entity\Country;
-use Alfadoc\CoreBundle\Entity\State;
+use Alfadoc\CoreBundle\Entity\Phone;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
 class TempController extends Controller
 {
-	public function createAction()
+	function createAction()
 	{
-	    $country = $this->getDoctrine()
-	        ->getRepository('AlfadocCoreBundle:Country')
- 	        ->find('1');
+    $em = $this->getDoctrine()->getEntityManager();
+    $phone = $em->getRepository('AlfadocCoreBundle:Phone')->find('3');
 
-	    if (!$country) {
-	        throw $this->createNotFoundException('No product found for id '.$id);
-	    }
+    if (!$phone) {
+        throw $this->createNotFoundException('No product found for id '.$id);
+    }
 
-	    $product = new State();
-	    $product->setState('Полтавская');
-	    $product->setCountry($country);
+    $em = $this->getDoctrine()->getEntityManager();
+    $product = $em->getRepository('AlfadocCoreBundle:User')->find('1');
 
-	    $em = $this->getDoctrine()->getEntityManager();
-	    $em->persist($product);
- 	    $em->flush();
+    if (!$product) {
+        throw $this->createNotFoundException('No product found for id '.$id);
+    }
 
-	    return new Response('Created product id '.$product->getId());
+    $product->addPhone($phone);
+    $em->flush();
+
+    return new Response('Created product id '.$product->getId());
+
 	}
 }
